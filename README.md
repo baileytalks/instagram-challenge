@@ -1,5 +1,7 @@
 # INSTAGRAM CLONE
 
+[![Build Status](https://travis-ci.org/baileytalks/instagram-challenge.svg?branch=master)](https://travis-ci.org/baileytalks/instagram-challenge)
+
 Get my Instagram clone up and running:
 
 * Ruby version
