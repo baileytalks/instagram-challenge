@@ -8,5 +8,4 @@ before_script:
   - bin/rails db:migrate
 script:
   - bundle exec rubocop
-  - bundle exec rails test
   - bundle exec rspec
