@@ -9,3 +9,4 @@ before_script:
 script:
   - bundle exec rubocop
   - bundle exec rails test
+  - bundle exec rspec
