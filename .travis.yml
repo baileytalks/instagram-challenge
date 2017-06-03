@@ -1,6 +1,11 @@
-rvm: '2.2.3'
-script: bundle exec rspec spec
+language: ruby
+rvm:
+  - 2.4.0
+services:
+  - postgresql
+before_script:
+  - bin/rails db:create
+  - bin/rails db:migrate
 script:
-  - bundle exec bin/rake db:create
-  - bundle exec bin/rake db:migrate
-  - bundle exec rspec spec
+  - bundle exec rubocop
+  - bundle exec rspec
