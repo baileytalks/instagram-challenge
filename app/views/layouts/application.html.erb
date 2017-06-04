@@ -2,13 +2,22 @@
 <html>
   <head>
     <title>Railsagram</title>
-    <!-- <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+    <!-- <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
   </head>
 
+  <header>
+    <%= link_to "Add new post", new_post_path %>
+  </header>
+
   <body>
     <%= yield %>
   </body>
+
+  <footer>
+    Footer text goes here
+  </footer>
 </html>

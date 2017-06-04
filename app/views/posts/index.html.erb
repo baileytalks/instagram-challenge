@@ -1,6 +1,18 @@
-<% @posts.each do |post| %>
-    <tr>
-      <td><%= post.comment %></td>
-      <td><%= image_tag post.image.url %></td>
-    </tr>
-  <% end %>
+<body>
+  <article>
+
+  	<% @posts.each do |post| %>
+  		<div class="Row">
+  			<div class="Grid">
+					<div class="Grid--1ofX">
+						<a href="/posts/<%= post.id %>"><%= image_tag post.image.url(:square) %></a>
+					</div>
+          <div class="Comment">
+            <%= post.comment %>
+          </div>
+  			</div>
+  		</div>
+    <% end %>
+
+  </article>
+</body>
