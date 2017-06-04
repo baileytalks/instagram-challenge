@@ -1,6 +1,6 @@
 <% @posts.each do |post| %>
     <tr>
       <td><%= post.comment %></td>
-      <td><%= image_tag @post.image.url %></td>
+      <td><%= image_tag post.image.url %></td>
     </tr>
   <% end %>

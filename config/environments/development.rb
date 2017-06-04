@@ -2,6 +2,16 @@ Rails.application.configure do
   # Added for the Paperclip gem
   Paperclip.options[:command_path] = "/usr/local/bin/"
 
+  config.paperclip_defaults = {
+  storage: :s3,
+    s3_credentials: {
+      bucket: ENV.fetch('railsagram'),
+      access_key_id: ENV.fetch('AKIAIS6CRUACM5YF3GWA'),
+      secret_access_key: ENV.fetch('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'),
+      s3_region: ENV.fetch('eu-west-2'),
+    }
+  }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

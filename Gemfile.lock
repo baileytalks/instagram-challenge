@@ -42,6 +42,12 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (8.0.0)
     ast (2.3.0)
+    aws-sdk (2.3.0)
+      aws-sdk-resources (= 2.3.0)
+    aws-sdk-core (2.3.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.3.0)
+      aws-sdk-core (= 2.3.0)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.0.6)
@@ -75,6 +81,9 @@ GEM
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
+    jmespath (1.2.4)
+      json_pure (>= 1.8.1)
+    json_pure (2.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -216,6 +225,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk (~> 2.3)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
