@@ -3,18 +3,11 @@
 
   <article>
 
-  	<% @posts.each do |post| %>
-  		<div class="Row">
-  			<div class="Grid">
-					<div class="Grid--1ofX">
-						<a href="/posts/<%= post.id %>"><%= image_tag post.image.url(:square) %></a>
-					</div>
-          <div class="Comment">
-            <%= post.comment %>
-          </div>
-  			</div>
-  		</div>
-    <% end %>
+    <div class="polaroid-posts">
+    	<% @posts.each do |post| %>
+  			<a href="/posts/<%= post.id %>" title="<%= post.comment %>"><%= image_tag post.image.url(:square) %></a>
+      <% end %>
+    </div>
 
   </article>
 </body>
